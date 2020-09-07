@@ -1,0 +1,16 @@
+{
+  "name": "sql-convert",
+  "version": "1.0.0",
+  "description": "convert expression from SQL to mapbox to filter data in mapbox-gl.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "keywords": [
+    "SQL",
+    "Mapbox Expression",
+    "Convert"
+  ],
+  "author": "zzhe",
+  "license": "ISC"
+}

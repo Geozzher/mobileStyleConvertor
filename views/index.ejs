@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <script src="/javascripts/lib/jquery-3.1.0.js"></script>
+    <script src="/javascripts/lib/jquery.form.js"></script>
+    <!--    <script src="/javascripts/getFormData.js"></script>-->
+
+</head>
+<body>
+<h1><%= title %></h1>
+<p>Welcome to <%= title %></p>
+<form id="style-input-form" action="/styleConversion" method="post" enctype="multipart/form-data">
+    <span>转换方式：</span>
+    <select name="type">
+        <option selected="true" value="android">Web→Android</option>
+        <option value="iOS">Web→iOS</option>
+    </select>
+    <br>
+    <br>
+    <input type="file" placeholder="请输入样式文件" name="inputFile" id="inputFile" required="required">
+    <br>
+    <br>
+    <input type="submit" class="btn btn-primary">
+    <br>
+
+</form>
+<script>
+    // $(function () {
+    //     $('#style-input-form').ajaxForm(function (data) {
+    //         if (data.status === "fail") {
+    //             alert(data.reason)
+    //         } else {
+    //
+    //             alert("data！");
+    //             var  d=data;
+    //             window.location.reload()
+    //         }
+    //     })
+    // })
+</script>
+</body>
+</html>
